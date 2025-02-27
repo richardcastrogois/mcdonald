@@ -1,26 +1,22 @@
 import { Product } from "@prisma/client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect,useState } from "react";
+import { useParams } from "next/navigation";
+
+import { formatCurrency } from "@/helpers/format-currency";
 
 interface ProductsProps {
   products: Product[];
 }
 
 const Products = ({ products }: ProductsProps) => {
-  const [imageUrls, setImageUrls] = useState<string[]>([]);
-
-  useEffect(() => {
-    // Atualiza as URLs das imagens apenas no cliente
-    setImageUrls(products.map((product) => product.imageUrl));
-  }, [products]);
-
+  const { slug } = useParams<{ slug: string }>();
   return (
     <div className="space-y-3 px-5">
-      {products.map((product, index) => (
+      {products.map((product) => (
         <Link
           key={product.id}
-          href="/"
+          href={`/${slug}/menu/${product.id}`}
           className="flex items-center justify-between gap-10 border-b py-3"
         >
           {/* ESQUERDA */}
@@ -30,26 +26,18 @@ const Products = ({ products }: ProductsProps) => {
               {product.description}
             </p>
             <p className="pt-3 text-sm font-semibold">
-              {new Intl.NumberFormat("pt-BR", {
-                style: "currency",
-                currency: "BRL",
-              }).format(product.price)}
+              {formatCurrency(product.price)}
             </p>
           </div>
 
           {/* DIREITA */}
           <div className="relative min-h-[82px] min-w-[120px]">
-            {/* Garantindo que a imagem só seja exibida após ser definida */}
-            {imageUrls[index] && (
-              <Image
-                src={imageUrls[index]}
-                alt={product.name}
-                fill
-                sizes="120px"
-                priority
-                className="rounded-lg object-contain"
-              />
-            )}
+            <Image
+              src={product.imageUrl}
+              alt={product.name}
+              fill
+              className="rounded-lg object-contain"
+            />
           </div>
         </Link>
       ))}
