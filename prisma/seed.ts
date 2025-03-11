@@ -15,7 +15,7 @@ const main = async () => {
         avatarImageUrl:
           "https://img.freepik.com/premium-vector/flat-fresh-food-logo-template-vector-stock-illustration_850624-160.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_hybrid",
         coverImageUrl:
-          "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQac8bHYlkBUjlHSKiuseLm2hIFzVY0OtxEPnw",
+          "https://img.freepik.com/free-photo/arrangement-tasty-batch-food-cooked-with-copy-space_23-2148765549.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_hybrid",
       },
     });
     const combosCategory = await tx.menuCategory.create({

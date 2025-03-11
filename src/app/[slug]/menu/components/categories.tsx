@@ -47,6 +47,7 @@ const RestaurantCategories = ({ restaurant }: RestaurantCategoriesProps) => {
             alt={restaurant.name}
             height={45}
             width={45}
+            className="rounded-lg"
           />
           <div>
             <h2 className="text-lg font-semibold">{restaurant.name}</h2>

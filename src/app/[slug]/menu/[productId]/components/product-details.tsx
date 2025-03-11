@@ -57,7 +57,7 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
               alt={product.restaurant.name}
               width={16}
               height={16}
-              className="rounded-full"
+              className="rounded-lg"
             />
             <p className="text-xs text-muted-foreground">
               {product.restaurant.name}
