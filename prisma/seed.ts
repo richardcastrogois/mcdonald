@@ -64,39 +64,42 @@ const main = async () => {
           ],
         },
         {
-          name: "McCrispy Chicken Elite",
+          name: "Caixa de Almoço Deliciosa",
           description:
-            "Composto por pão tipo brioche com batata, molho Honey&Fire, bacon em fatias, alface, tomate, queijo sabor cheddar e carne 100% de peito de frango, temperada e empanada, acompanhamento e bebida.",
+            "Uma caixa de almoço repleta de comida apetitosa, disposta de forma organizada e atraente sobre um fundo branco. A combinação de cores e texturas dos alimentos cria uma apresentação visualmente agradável e convidativa.",
           price: 39.9,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQr12aTqPo3SsGjBJCaM7yhxnbDlXeL5N9dckv",
+            "https://img.freepik.com/fotos-premium/caixa-de-almoco-com-comida-deliciosa-em-fundo-branco_392895-471459.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_authors_boost",
           menuCategoryId: combosCategory.id,
           restaurantId: restaurant.id,
           ingredients: [
-            "Pão tipo brioche",
-            "Batata",
-            "Molho Honey&Fire",
-            "Bacon em fatias",
+            "Pão tipo forma",
             "Alface",
+            "Picles",
+            "Mussarela",
+            "Peito de Peru",
             "Tomate",
-            "Queijo sabor cheddar",
-            "Carne 100% de peito de frango",
+            "Pepino",
+            "Castanhas",
           ],
         },
         {
-          name: "Duplo Cheddar McMelt",
+          name: "Saudável Fit",
           description:
-            "Dois hambúrgueres (100% carne bovina), molho lácteo com queijo tipo cheddar, cebola ao molho shoyu e pão escuro com gergelim, acompanhamento e bebida.",
+            "Um prato colorido e equilibrado, repleto de alimentos saudáveis, incluindo folhas verdes frescas, legumes variados e possivelmente uma fonte de proteína, como frango grelhado ou tofu. A disposição dos ingredientes é cuidadosamente organizada, criando uma apresentação visualmente atraente e apetitosa. O fundo branco destaca as cores vibrantes dos alimentos, transmitindo uma sensação de frescor e vitalidade.",
           price: 36.2,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQWdq0w8niS9XCLQu7Nb4jvBYZze16goaOqsKR",
+            "https://img.freepik.com/fotos-premium/prato-de-comida-saudavel-com-salada-e-legumes-em-um-fundo-branco_725455-290.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_authors_boost",
           menuCategoryId: combosCategory.id,
           restaurantId: restaurant.id,
           ingredients: [
-            "Pão escuro com gergelim",
-            "Hambúrguer de carne 100% bovina",
-            "Molho lácteo com queijo tipo cheddar",
-            "Cebola ao molho shoyu",
+            "Folhas verdes (alface, rúcula ou espinafre)",
+            "Tomate cereja",
+            "Pepino",
+            "Rúcula",
+            "Abacate",
+            "Grão-de-bico",
+            "Limão",
           ],
         },
       ],
@@ -189,41 +192,42 @@ const main = async () => {
     });
     const frenchFriesCategory = await tx.menuCategory.create({
       data: {
-        name: "Fritas",
+        name: "Porções",
         restaurantId: restaurant.id,
       },
     });
     await tx.product.createMany({
       data: [
         {
-          name: "Fritas Grande",
-          description: "Batatas fritas crocantes e sequinhas. Vem bastante!",
+          name: "Salada de Espinafre com Morangos",
+          description:
+            "Uma porção de salada fresca e colorida, composta por folhas verdes de espinafre e morangos suculentos, dispostos de forma harmoniosa sobre um fundo branco. A combinação de texturas e cores cria uma apresentação visualmente atraente e saudável, ideal para uma refeição leve e nutritiva.",
           ingredients: [],
           price: 10.9,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQNd3jSNrcJroaszwjUAlM6iSO5ZTx2HV70t31",
+            "https://img.freepik.com/fotos-premium/salada-com-folhas-de-espinafre-e-morango-no-fundo-branco_392895-157701.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_authors_boost",
           menuCategoryId: frenchFriesCategory.id,
           restaurantId: restaurant.id,
         },
         {
-          name: "Fritas Média",
+          name: "Salada Vegetal com Queijo de Cabra",
           description:
-            "Batatas fritas crocantes e sequinhas. Vem uma média quantidade!",
+            "Uma salada fresca e saudável, composta por folhas verdes de alface, tomates cortados, azeitonas pretas e queijo de cabra, dispostos de forma equilibrada sobre um fundo branco. A combinação de cores e texturas cria uma apresentação visualmente atraente e apetitosa, perfeita para uma refeição leve e nutritiva.",
           ingredients: [],
           price: 9.9,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQ7Y6lv9tkc0L9oMIXZsFJtwnBh2KCz3y6uSW1",
+            "https://img.freepik.com/fotos-premium/estilo-de-vida-saudavel-salada-de-dieta-vegetal-com-azeitonas-e-queijo-de-cabra-em-fundo-branco_115919-841.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_authors_boost",
           menuCategoryId: frenchFriesCategory.id,
           restaurantId: restaurant.id,
         },
         {
-          name: "Fritas Pequena",
+          name: "Salada de Outono com Maçãs e Nozes",
           description:
-            "Batatas fritas crocantes e sequinhas. Vem pouquinho (é bom pra sua dieta)!",
+            "Uma salada de outono vibrante e saudável, composta por maçãs cortadas, nozes, folhas de rúcula fresca, cebola roxa e gengibre, dispostos de forma harmoniosa sobre um fundo branco. A combinação de sabores doces, crocantes e picantes cria uma experiência gastronômica única e equilibrada, ideal para uma refeição leve e saborosa.",
           ingredients: [],
           price: 5.9,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQ5toOZxYa1oARJCUGh4EY3x8NjXHtvZ7lnVfw",
+            "https://img.freepik.com/fotos-gratis/salada-de-outono-com-macas-e-nozes-isoladas-no-fundo-branco_123827-25219.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_authors_boost",
           menuCategoryId: frenchFriesCategory.id,
           restaurantId: restaurant.id,
         },
