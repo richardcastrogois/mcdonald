@@ -20,49 +20,47 @@ const main = async () => {
     });
     const combosCategory = await tx.menuCategory.create({
       data: {
-        name: "Combos",
+        name: "Dia a Dia",
         restaurantId: restaurant.id,
       },
     });
     await tx.product.createMany({
       data: [
         {
-          name: "McOferta Média Big Mac Duplo",
+          name: "Salada Saudável com Abacate e Grão-de-Bico",
           description:
-            "Quatro hambúrgueres (100% carne bovina), alface americana, queijo fatiado sabor cheddar, molho especial, cebola, picles e pão com gergilim, acompanhamento e bebida.",
+            "Uma salada fresca e nutritiva, composta por tomates suculentos, abacate cremoso, grão-de-bico crocante e folhas verdes, temperada com azeite de oliva e ervas finas. Perfeita para uma refeição leve e saudável.",
           price: 39.9,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQaHB8tslkBUjlHSKiuseLm2hIFzVY0OtxEPnw",
+            "https://img.freepik.com/fotos-gratis/salada-saudavel-com-tomate-de-abacate-e-grao-de-bico-isolado-em-fundo-branco_123827-31235.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_hybrid",
           menuCategoryId: combosCategory.id,
           restaurantId: restaurant.id,
           ingredients: [
-            "Pão com gergilim",
-            "Hambúrguer de carne 100% bovina",
-            "Alface americana",
-            "Queijo fatiado sabor cheddar",
-            "Molho especial",
-            "Cebola",
-            "Picles",
+            "Tomate",
+            "Abacate",
+            "Grão-de-bico",
+            "Folhas verdes",
+            "Azeite de oliva",
+            "Ervas finas",
+            "Sal e pimenta",
           ],
         },
         {
-          name: "Novo Brabo Melt Onion Rings",
+          name: "Batata Doce Grelhada com Manjericão e Molho de Tomate",
           description:
-            "Dois hambúrgueres de carne 100% bovina, méquinese, a exclusiva maionese especial com sabor de carne defumada, onion rings, fatias de bacon, queijo processado sabor cheddar, o delicioso molho lácteo com queijo tipo cheddar tudo isso no pão tipo brioche trazendo uma explosão de sabores pros seus dias de glória! Acompanhamento e Bebida.",
+            "Batata doce grelhada, levemente caramelizada e temperada com manjericão fresco, servida com um molho de tomate azedo e aromático. Uma opção saudável e saborosa, perfeita para uma refeição leve e nutritiva.",
           price: 41.5,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQeGQofnEPyQaHEV2WL8rGUs41oMICtYfNkphl",
+            "https://img.freepik.com/fotos-gratis/comida-saudavel-batata-doce-grelhada-com-manjericao-servido-com-molho-de-tomate-azedo-close-up-em-um-fundo-branco-foto-para-o-cardapio_639032-1535.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_hybrid",
           menuCategoryId: combosCategory.id,
           restaurantId: restaurant.id,
           ingredients: [
-            "Pão tipo brioche",
-            "Hambúrguer de carne 100% bovina",
-            "Méquinese",
-            "Maionese especial com sabor de carne defumada",
-            "Onion rings",
-            "Fatias de bacon",
-            "Queijo processado sabor cheddar",
-            "Molho lácteo com queijo tipo cheddar",
+            "Batata doce",
+            "Manjericão fresco",
+            "Molho de tomate azedo",
+            "Azeite de oliva",
+            "Alho",
+            "Sal e pimenta",
           ],
         },
         {
@@ -105,84 +103,85 @@ const main = async () => {
     });
     const hamburguersCategory = await tx.menuCategory.create({
       data: {
-        name: "Lanches",
+        name: "Carnes",
         restaurantId: restaurant.id,
       },
     });
     await tx.product.createMany({
       data: [
         {
-          name: "Big Mac",
+          name: "Tagliatelle com Frango e Tomate",
           description:
-            "Quatro hambúrgueres (100% carne bovina), alface americana, queijo fatiado sabor cheddar, molho especial, cebola, picles e pão com gergilim, acompanhamento e bebida.",
+            "Delicioso prato de tagliatelle al dente, acompanhado de suculentos pedaços de frango grelhado, molho de tomate caseiro e ervas frescas. Uma combinação perfeita de sabores para uma refeição reconfortante.",
           ingredients: [
-            "Pão com gergilim",
-            "Hambúrguer de carne 100% bovina",
-            "Alface americana",
-            "Queijo fatiado sabor cheddar",
-            "Molho especial",
+            "Tagliatelle",
+            "Frango grelhado",
+            "Molho de tomate caseiro",
+            "Ervas frescas",
+            "Azeite de oliva",
+            "Alho",
             "Cebola",
-            "Picles",
           ],
           price: 39.9,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQKfI6fivqActTvBGLXfQe4a8CJ6d3HiR7USPK",
+            "https://img.freepik.com/fotos-gratis/macarrao-tagliatelle-com-tomate-e-frango_2829-18003.jpg?ga=GA1.1.507820623.1737590346&semt=ais_hybrid",
           menuCategoryId: hamburguersCategory.id,
           restaurantId: restaurant.id,
         },
         {
-          name: "Duplo Quarterão",
+          name: "Bolinhas de Carne com Purê de Batatas",
           description:
-            "Dois hambúrgueres de carne 100% bovina, méquinese, a exclusiva maionese especial com sabor de carne defumada, onion rings, fatias de bacon, queijo processado sabor cheddar, o delicioso molho lácteo com queijo tipo cheddar tudo isso no pão tipo brioche trazendo uma explosão de sabores pros seus dias de glória! Acompanhamento e Bebida.",
+            "Deliciosas bolinhas de carne suculentas, acompanhadas de um cremoso purê de batatas. Uma combinação clássica e reconfortante, perfeita para uma refeição caseira e saborosa.",
           ingredients: [
-            "Pão tipo brioche",
-            "Hambúrguer de carne 100% bovina",
-            "Méquinese",
-            "Maionese especial com sabor de carne defumada",
-            "Onion rings",
-            "Fatias de bacon",
-            "Queijo processado sabor cheddar",
-            "Molho lácteo com queijo tipo cheddar",
+            "Carne moída",
+            "Purê de batatas",
+            "Cebola",
+            "Alho",
+            "Farinha de rosca",
+            "Ovos",
+            "Temperos naturais",
           ],
           price: 41.5,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQ99rtECuYaDgmA4VujBU0wKn2ThXJvF3LHfyc",
+            "https://img.freepik.com/fotos-gratis/bolinhas-de-carne-com-pure-de-batatas-isoladas-em-fundo-branco_123827-34588.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_hybrid",
           menuCategoryId: hamburguersCategory.id,
           restaurantId: restaurant.id,
         },
         {
-          name: "McMelt",
+          name: "Frango Grelhado com Salada",
           description:
-            "Composto por pão tipo brioche com batata, molho Honey&Fire, bacon em fatias, alface, tomate, queijo sabor cheddar e carne 100% de peito de frango, temperada e empanada, acompanhamento e bebida.",
+            "Suculento frango grelhado, temperado com ervas e especiarias, servido com uma fresca salada de folhas verdes, tomate e pepino. Uma opção leve e saudável para uma refeição equilibrada.",
           ingredients: [
-            "Pão tipo brioche",
-            "Batata",
-            "Molho Honey&Fire",
-            "Bacon em fatias",
-            "Alface",
+            "Frango grelhado",
+            "Folhas verdes",
             "Tomate",
-            "Queijo sabor cheddar",
-            "Carne 100% de peito de frango",
+            "Pepino",
+            "Ervas e especiarias",
+            "Azeite de oliva",
+            "Sal e pimenta",
           ],
           price: 39.9,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQUY0VlDTmvPeJLoyOjzNsMqFdxUI423nBl6br",
+            "https://img.freepik.com/fotos-gratis/frango-grelhado-com-salada-isolado-em-fundo-branco_123827-35683.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_hybrid",
           menuCategoryId: hamburguersCategory.id,
           restaurantId: restaurant.id,
         },
         {
-          name: "McNífico Bacon",
+          name: "Perna de Porco Guisada com Molho",
           description:
-            "Dois hambúrgueres (100% carne bovina), molho lácteo com queijo tipo cheddar, cebola ao molho shoyu e pão escuro com gergelim, acompanhamento e bebida.",
+            "Deliciosa perna de porco guisada, cozida lentamente em um molho rico e saboroso, acompanhada de legumes e batatas. Uma refeição reconfortante e cheia de sabor, perfeita para os amantes de pratos tradicionais.",
           ingredients: [
-            "Pão escuro com gergelim",
-            "Hambúrguer de carne 100% bovina",
-            "Molho lácteo com queijo tipo cheddar",
-            "Cebola ao molho shoyu",
+            "Perna de porco",
+            "Molho rico (feito com caldo de carne e especiarias)",
+            "Batatas",
+            "Cenoura",
+            "Cebola",
+            "Alho",
+            "Louro e tomilho",
           ],
           price: 36.2,
           imageUrl:
-            "https://u9a6wmr3as.ufs.sh/f/jppBrbk0cChQBBmifbjzEVXRoycAtrP9vH45bZ6WDl3QF0a1",
+            "https://img.freepik.com/fotos-gratis/perna-de-porco-guisado-na-sopa-de-molho_1339-4168.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_hybrid",
           menuCategoryId: hamburguersCategory.id,
           restaurantId: restaurant.id,
         },

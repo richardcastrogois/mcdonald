@@ -22,8 +22,8 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
         <Image
           src={restaurant.avatarImageUrl}
           alt={restaurant.name}
-          width={82}
-          height={82}
+          width={100}
+          height={100}
           className="rounded-lg"
         />
         <h2 className="font-semibold">{restaurant.name}</h2>
@@ -36,13 +36,13 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
           oferecer praticidade e sabor em cada detalhe!
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4 pt-14">
+      <div className="grid grid-cols-2 gap-4 pt-14 ">
         <ConsumptionMethodOption
           slug={slug}
           option="DINE_IN"
           buttonText="Para comer aqui"
           imageAlt="Comer aqui"
-          imageUrl="/dine_in.png"
+          imageUrl="/6612487.jpg"
         />
         <ConsumptionMethodOption
           slug={slug}
