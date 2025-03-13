@@ -2,8 +2,8 @@
 <br>
 
 
-Bem-vindo ao repositório do Healthy Food!
-Este site foi criado como parte do Full Stack Week, um projeto de aprendizado para aprimorar minhas habilidades em desenvolvimento web. O objetivo é oferecer uma plataforma onde os usuários possam encomendar marmitas saudáveis e deliciosas, preparadas com ingredientes frescos e selecionados. Ideal para quem busca uma alimentação equilibrada sem abrir mão do sabor!
+  Bem-vindo ao repositório do Healthy Food!
+  Este site foi criado como parte do Full Stack Week, um projeto de aprendizado para aprimorar minhas habilidades em desenvolvimento web. O objetivo é oferecer uma plataforma onde os usuários possam encomendar marmitas saudáveis e deliciosas, preparadas com ingredientes frescos e selecionados. Ideal para quem busca uma alimentação equilibrada sem abrir mão do sabor!
 <br><br>
 
 ## 🎯 Objetivo
