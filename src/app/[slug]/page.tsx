@@ -17,7 +17,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
   }
 
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-between overflow-hidden">
+    <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
       {/* Imagem de fundo */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -45,7 +45,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
       </div>
 
       {/* Conteúdo principal */}
-      <div className="relative z-10 mt-40 flex flex-col items-center gap-4 pt-10">
+      <div className="relative z-10 flex flex-col items-center gap-2 pt-10 md:gap-4 md:pt-16 lg:gap-6 lg:pt-20">
         {/* LOGO E TITULO */}
         <Image
           src={restaurant.avatarImageUrl}
@@ -54,14 +54,14 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
           height={120}
           className="rounded-lg"
         />
-        <h2 className="text-2xl font-semibold text-gray-200">
+        <h2 className="text-2xl font-semibold text-gray-200 py-4">
           {restaurant.name}
         </h2>
       </div>
 
       {/* BEM VINDO */}
-      <div className="relative z-10 mt-20 space-y-2 px-6 text-center">
-        <h3 className="bg-gradient-to-r from-green-300 to-green-500 bg-clip-text text-2xl font-semibold text-transparent">
+      <div className="relative z-10 space-y-2 px-6 text-center">
+        <h3 className="bg-gradient-to-r from-green-300 to-green-500 bg-clip-text text-2xl font-semibold text-transparent pt-5">
           Seja bem-vindo!
         </h3>
         <p className="text-gray-200 drop-shadow-lg">
@@ -71,7 +71,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
       </div>
 
       {/* OPÇÕES DE CONSUMO */}
-      <div className="relative z-10 grid w-full max-w-md grid-cols-2 gap-4 px-6 pb-10">
+      <div className="relative z-10 grid w-full max-w-md grid-cols-2 gap-4 px-6 pb-8">
         <ConsumptionMethodOption
           slug={slug}
           option="DINE_IN"
