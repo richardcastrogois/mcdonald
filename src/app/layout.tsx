@@ -17,7 +17,9 @@ export const metadata: Metadata = {
   description:
     "Na Healthy Food, oferecemos marmitas saudáveis e deliciosas, preparadas com ingredientes frescos e selecionados. Ideal para quem busca uma alimentação equilibrada sem abrir mão do sabor. Peça online e receba em casa, com praticidade e qualidade!",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.ico", // Ícone padrão para a maioria dos navegadores
+    shortcut: "/favicon.ico", // Ícone para atalhos
+    apple: "/apple-touch-icon.png", // Ícone para dispositivos Apple (iPhone, iPad)
   },
 };
 

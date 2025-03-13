@@ -17,7 +17,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
   }
 
   return (
-    <div className="relative flex h-screen flex-col items-center justify-center overflow-hidden px-6 pt-20">
+    <div className="relative flex min-h-screen flex-col items-center justify-between overflow-hidden">
       {/* Imagem de fundo */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -25,7 +25,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
           alt="Background"
           fill
           className="object-cover"
-          style={{ 
+          style={{
             pointerEvents: "none",
           }}
         />
@@ -45,7 +45,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
       </div>
 
       {/* Conteúdo principal */}
-      <div className="relative z-10 flex flex-col items-center gap-2 pt-6">
+      <div className="relative z-10 mt-40 flex flex-col items-center gap-4 pt-10">
         {/* LOGO E TITULO */}
         <Image
           src={restaurant.avatarImageUrl}
@@ -60,7 +60,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
       </div>
 
       {/* BEM VINDO */}
-      <div className="relative z-10 space-y-2 pt-5 text-center">
+      <div className="relative z-10 mt-20 space-y-2 px-6 text-center">
         <h3 className="bg-gradient-to-r from-green-300 to-green-500 bg-clip-text text-2xl font-semibold text-transparent">
           Seja bem-vindo!
         </h3>
@@ -71,7 +71,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
       </div>
 
       {/* OPÇÕES DE CONSUMO */}
-      <div className="h-110 w-110 relative z-10 grid grid-cols-2 gap-4">
+      <div className="relative z-10 grid w-full max-w-md grid-cols-2 gap-4 px-6 pb-10">
         <ConsumptionMethodOption
           slug={slug}
           option="DINE_IN"
