@@ -87,7 +87,7 @@ const CpfForm = () => {
             <DrawerFooter>
               <Button
                 variant="destructive"
-                className="w-full rounded-full bg-green-600"
+                className="w-full rounded-full bg-green-900/75"
               >
                 Confirmar
               </Button>

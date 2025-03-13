@@ -22,7 +22,7 @@ const CartProductItem = ({ product }: CartItemProps) => {
           <Image src={product.imageUrl} alt={product.name} fill />
         </div>
         <div className="space-y-1">
-          <p className="max-w-[90%] truncate text-ellipsis text-xs">
+          <p className="max-w-[90%] whitespace-normal break-words text-xs">
             {product.name}
           </p>
           <p className="text-sm font-semibold">
@@ -39,7 +39,7 @@ const CartProductItem = ({ product }: CartItemProps) => {
             </Button>
             <p className="w-7 text-xs">{product.quantity}</p>
             <Button
-              className="h-7 w-7 rounded-lg"
+              className="h-7 w-7 rounded-lg bg-green-900/75"
               variant="destructive"
               onClick={() => increaseProductQuantity(product.id)}
             >

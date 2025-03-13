@@ -19,7 +19,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
       {/* Imagem de fundo */}
-      <div className="absolute inset-0 z-0">
+      <div className="fixed inset-0 z-0">
         <Image
           src="/teste001.jpg"
           alt="Background"
@@ -31,7 +31,7 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
         />
         {/* Máscara para o efeito de degradê e desfoque */}
         <div
-          className="absolute inset-0"
+          className="fixed inset-0"
           style={{
             maskImage:
               "linear-gradient(to bottom, transparent 0%, black 90%, black 100%)",
