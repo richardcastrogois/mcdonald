@@ -25,7 +25,9 @@ const RestaurantPage = async ({ params }: RestaurantPageProps) => {
           alt="Background"
           fill
           className="object-cover"
-          style={{ pointerEvents: "none" }}
+          style={{ 
+            pointerEvents: "none",
+          }}
         />
         {/* Máscara para o efeito de degradê e desfoque */}
         <div

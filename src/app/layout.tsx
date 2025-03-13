@@ -13,8 +13,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "FSW Donalds",
-  description: "Bora finalizar esse projeto lindo!",
+  title: "Healthy Food",
+  description:
+    "Na Healthy Food, oferecemos marmitas saudáveis e deliciosas, preparadas com ingredientes frescos e selecionados. Ideal para quem busca uma alimentação equilibrada sem abrir mão do sabor. Peça online e receba em casa, com praticidade e qualidade!",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

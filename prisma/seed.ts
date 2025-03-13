@@ -9,11 +9,11 @@ const main = async () => {
     await tx.restaurant.deleteMany();
     const restaurant = await tx.restaurant.create({
       data: {
-        name: "Fresh Food",
+        name: "Healthy Food",
         slug: "fsw-donalds",
         description: "Sabor de verdade, feito na hora!",
         avatarImageUrl:
-          "https://img.freepik.com/premium-vector/flat-fresh-food-logo-template-vector-stock-illustration_850624-160.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_hybrid",
+          "https://img.freepik.com/vetores-gratis/frutas-e-legumes-alimentos-saudaveis_24877-51691.jpg?t=st=1741838835~exp=1741842435~hmac=ea810644aeb41d9139339bce31007606e850a6bdf7a2758c44caacfbbb503f52&w=826",
         coverImageUrl:
           "https://img.freepik.com/free-photo/arrangement-tasty-batch-food-cooked-with-copy-space_23-2148765549.jpg?uid=R145213515&ga=GA1.1.507820623.1737590346&semt=ais_hybrid",
       },
